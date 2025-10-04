@@ -38,8 +38,8 @@ L'architettura dei dati per questo progetto adotta la **Medallion Architecture**
 ![Data Architecture](docs/data_architecture.png)
 
 
-* **Bronze Layer**: Contiene i dati grezzi (*Raw Data*) **così com'è** (*as-is*) dai sistemi sorgente. I dati vengono ingeriti dai **File CSV** nel database **SQL Server**.
-* **Silver Layer**: Questo Layer include i processi di pulizia (*Data Cleansing*), standardizzazione e normalizzazione per preparare i dati all'analisi. 
+* **Bronze Layer**: Contiene i dati grezzi (*Raw Data*) dai sistemi sorgente. I dati vengono ingeriti dai **File CSV** nel database **SQL Server**.
+* **Silver Layer**: Questo Layer include i processi di pulizia, standardizzazione e normalizzazione per preparare i dati all'analisi. 
 * **Gold Layer**: Ospita i dati **pronti per il business**, modellati in uno **Star Schema** e ottimizzati per la reportistica e l'analisi. 
 
 -----
